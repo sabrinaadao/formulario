@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <h1>Formulario de Currículo</h1>
+    </header>
+    <main >
+        <form class="formulario" action="" method="post">
+            <fieldset class="dados">
+                <div>
+                <label for="nome"> Nome:</label>
+                <input id= "nome" type="text" name="nome">  
+                </div>
+                <div>
+                <label for="sobrenome">Sobrenome:</label> 
+                <input id="sobrenome" type="text" name="sobrenome">  
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" name="email">
+                </div>
+                <div>
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" placeholder="(xx) xxxxx-xxxx">
+                </div>
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password">
+                </div> 
+                
+            </fieldset>
+            <fieldset>
+                <div>
+                    <label for="conhecimentos">Conhecimentos:</label>
+                    <br>
+                    <textarea name="conhecimentos" id="conhecimentos" cols="30" rows="10" placeholder="Conte um pouco sobre seus conhecimentos na área."></textarea>
+                </div>
+                <div>
+                    <label for="experiencias"> Experiencias:</label>
+                    <br>
+                    <textarea name="experiencia" id="experiencia" cols="30" rows="10" placeholder="Conte um pouco sobre suas experiencias na area."></textarea>
+                </div>
+                
+            </fieldset>
+            <fieldset>
+                <div >
+                    <label for="vagas"> Selecione a sua vaga de interesse:</label>
+                    <select class="selecionarVaga" name="vagas" id="vagas" required>
+                        <option> Estagio de Suporte</option>
+                        <option>Analista de Sistemas</option>
+                        <option value="">Desenvolvedor Web</option>
+                    </select>
+                </div>
+               
+            </fieldset>
+            <fieldset>
+                <h3>Termos de Uso</h3>
+                <textarea name="termoDeUso" id="termoDeUso" cols="30" rows="10" readonly> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est veniam autem perspiciatis eaque libero ipsa sint temporibus eius recusandae explicabo? Dolore aut quo doloribus cumque a eius ducimus omnis hic.</textarea>
+                <div class="checkBox">
+                    <input type="checkbox" name="termo" id="termo" required>
+                    <label for="termo"> Li e estou de acordo com o termo de uso.</label>
+                </div>
+
+            </fieldset>
+            <div>
+             <input class="enviar" type="button" value="Enviar">
+            </div> 
+        </form>
+    </main>
+        
+    
+</body>
+</html>
